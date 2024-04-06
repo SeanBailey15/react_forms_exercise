@@ -57,7 +57,9 @@ const NewBoxForm = ({addBox}) => {
                     value={formik.values.width}
                     onChange={formik.handleChange}
                 />
-                {formik.errors.width ? <div className="NewBoxForm-err" >{formik.errors.width}</div> : null}
+                {formik.errors.width && formik.touched.width && (
+                    <div className="NewBoxForm-err">{formik.errors.width}</div>
+                )}
                 <label className="NewBoxForm-label" htmlFor="height" >Box Height</label>
                 <input
                     className="NewBoxForm-input" 
@@ -68,7 +70,9 @@ const NewBoxForm = ({addBox}) => {
                     value={formik.values.height}
                     onChange={formik.handleChange}
                 />
-                {formik.errors.height ? <div className="NewBoxForm-err" >{formik.errors.height}</div> : null}
+                {formik.errors.height && formik.touched.height && (
+                    <div className="NewBoxForm-err">{formik.errors.height}</div>
+                )}
                 <label className="NewBoxForm-label" htmlFor="color" >Box Color</label>
                 <input
                     className="NewBoxForm-input" 
@@ -79,7 +83,9 @@ const NewBoxForm = ({addBox}) => {
                     value={formik.values.color}
                     onChange={formik.handleChange}
                 />
-                {formik.errors.color ? <div className="NewBoxForm-err" >{formik.errors.color}</div> : null}
+                {formik.errors.color && formik.touched.color && (
+                    <div className="NewBoxForm-err">{formik.errors.color}</div>
+                )}
                 <button className="NewBoxForm-btn" type="submit" onClick={formik.handleSubmit}>Add Box</button>
             </form>
         </div>
