@@ -1,0 +1,18 @@
+.BoxList-h1 {
+  text-align: center;
+}
+
+.BoxList-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.BoxList-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}

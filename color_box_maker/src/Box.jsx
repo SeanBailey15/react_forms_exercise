@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
+import './Box.css'
 
 const Box = ({id, width, height, color, removeBox}) => {
     const handleRemove = () => {
@@ -6,11 +7,9 @@ const Box = ({id, width, height, color, removeBox}) => {
     };
 
     return (
-        <div 
-        className="Box"
-        style={{width: width, height: height, backgroundColor: color}}
-        >
-            <button className="Box-btn" onClick={handleRemove} style={{display: "inline-block"}}>X</button>
+        <div className="Box">
+            <button className="Box-btn" type="submit" onClick={handleRemove} style={{display: "inline-block"}}>X</button>
+            <div className="Box-div" style={{width: width, height: height, backgroundColor: color}}></div>
         </div>
     )
 }

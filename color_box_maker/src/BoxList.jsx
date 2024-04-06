@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {v4 as uuid} from 'uuid'
 import Box from './Box'
 import NewBoxForm from './NewBoxForm'
+import './BoxList.css'
 
 const BoxList = () => {
     const INITIAL_STATE = []
@@ -18,7 +19,7 @@ const BoxList = () => {
 
     return (
         <div className="BoxList">
-            <h3 className="BoxList-h3">Make Some Boxes!</h3>
+            <h1 className="BoxList-h1">Make Some Boxes!</h1>
             <div className="BoxList-form">
                 <NewBoxForm addBox={addBox}/>
             </div>
