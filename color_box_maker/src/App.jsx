@@ -1,14 +1,15 @@
-import { useState } from 'react'
+import React from "react"
+import BoxList from "./BoxList"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
       <div>
+        <BoxList />
       </div>
     </>
   )
 }
+
 
 export default App
