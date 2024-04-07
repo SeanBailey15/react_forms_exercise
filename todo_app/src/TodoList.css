@@ -1,0 +1,18 @@
+.TodoList-h1 {
+  text-align: center;
+}
+
+.TodoList-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.TodoList-todos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}

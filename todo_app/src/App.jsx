@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import TodoList from './TodoList'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
   return (
     <>
       <div>
+        <TodoList />
       </div>
     </>
   )

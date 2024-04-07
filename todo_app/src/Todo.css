@@ -1,0 +1,30 @@
+.Todo {
+  display: flex;
+  margin-bottom: 10px;
+  width: 75vw;
+}
+
+.Todo-div {
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 65vw;
+  padding-left: 10px;
+  background-color: paleturquoise;
+}
+
+.Todo-btn {
+  font-weight: bolder;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  background-color: darkred;
+  color: white;
+}
+
+.Todo-content {
+  font-size: larger;
+  font-weight: bolder;
+}
